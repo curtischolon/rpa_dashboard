@@ -1,0 +1,22 @@
+* {
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+}
+
+header {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+nav li {
+    list-style: none;
+    text-decoration: none;
+}
