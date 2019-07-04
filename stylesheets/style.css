@@ -10,17 +10,28 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 6px;
+    grid-template-columns: min-max(100px, auto) repeat(11, 1fr);
+    grid-gap: 8px;
 }
 
 header {
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: 700;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    text-align: center;
 }
 
 nav li {
     list-style: none;
     text-decoration: none;
+}
+
+.process-count {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: black;
 }

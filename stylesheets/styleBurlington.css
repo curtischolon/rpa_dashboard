@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    font-size: 3rem;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+header {
+    text-align: center;
+    color: #ddd;
+    background: rgb(14, 90, 90);
+    background: linear-gradient(0deg, rgb(11, 30, 82) 0%, rgba(2,5,28,1) 50%);
+    grid-column: 1/13;
+}
+
+.section-header {
+    grid-column: 2/13;
+    height: 125px;
+    padding-top: 20px;
+    font-size: 3.5rem;
+    color: #666;
+}
+
+.card {
+    font-family: 'Mitr', sans-serif;
+    background-color: #222;
+    height: 270px;
+    border-radius: 5px;
+    color: #ddd;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 15px;
+    text-align: center;
+}
+
+.card:hover {
+    color: #0336ff;
+}
+
+.compliance-header{
+    grid-row: 2;
+} 
+
+.compliance-returns {
+    grid-column: 2/5;
+    grid-row: 3/5;
+}
+
+.shrink-reports {
+    grid-column: 5/8;
+    grid-row: 3/5;
+}
+
+.sbt-line-check {
+    grid-column: 8/11;
+    grid-row: 3/5;
+}
+
+.affidavit-processing {
+    grid-column: 2/5;
+    grid-row: 5/7;
+}
+
+.edi-header {
+    grid-row: 7;
+}
+
+.excel-csv {
+    grid-column: 2/5;
+    grid-row: 8/10;
+}
+
+.pos-portal-retrieval {
+    grid-column: 5/8;
+    grid-row: 8/10;
+}
+
+.emailed-pos {
+    grid-column: 8/11;
+    grid-row: 8/10;
+}
+
+.barnes-noble {
+    grid-column: 2/5;
+    grid-row: 10/12;
+}
+
+.beer-header {
+    grid-row: 12;
+}
+
