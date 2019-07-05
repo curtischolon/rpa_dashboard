@@ -20,22 +20,46 @@
             <h2>Compliance</h2>
         </div>
         <div class="compliance-returns card">
-            <h3>Compliance Return Upload Process</h3>
+            <h3>Return Upload Process</h3>
             <div class="overlay-content">
                 <div class="description">
-                    <p>Daily process whereby returns that have been reconciled by Compliance are uploaded to Computac to finalize. Similar to how AR uploads an 820 document, the resulting transactions are part of the Compliance return balancing process</p>
+                  <p>Daily process whereby returns that have been reconciled 
+                        by Compliance are uploaded to Computac to finalize. 
+                        Similar to how AR uploads an 820 document, 
+                        the resulting transactions are part of the Compliance 
+                        return balancing process</p>
                 </div>
                 <div class="notes">
-                    Just do the returns
+                    <p><span>07/05/2019 - </span>Development has not yet started and is
+                    pending the completion of other processes.</p>
                 </div>
                 <div class="roi">
-                    1000hrs/week
+                   <p>4hrs/week</p>
                 </div>
             </div>
             <p></p>
         </div>
         <div class="shrink-reports card">
             <h3>Monthly Shrink Reports</h3>
+            <div class="overlay-content">
+                    <div class="description">
+                      <p>Monthly process ran in Computac to generate
+                          and pull the shrink reports by each SBT chain in 
+                          each agency, Canada and the US.
+                      </p>
+                    </div>
+                    <div class="notes">
+                        <p><span>07/05/2019 - </span>The process is largely finished
+                        with initial testing completed 06/30/2019. Some network / email
+                        issues prevented the process from completing. Additionally,
+                        the amount of time it took for the reports to generate was
+                        significantly longer than expect. Expected production date is 
+                        end of July.</p>
+                    </div>
+                    <div class="roi">
+                       <p>12hrs/month</p>
+                    </div>
+                </div>
         </div>
         <div class="sbt-line-check card">
             <h3>SBT POS Line Checks</h3>
@@ -88,7 +112,7 @@
         <div class="books-header section-header">
             <h2>Books</h2>
         </div>
-        <div class="roll-forward card">
+        <div class=" roll-forward card">
             <h3>Monthly Publisher Roll-Forward</h3>
             <p></p>
         </div>
@@ -105,6 +129,22 @@
         </div>
 
     </div>
+    <div class="overlay-wrapper" id="overlay-wrapper" onclick=closeOverlay()>
+        <div class="overlay">
+            <div class="overlay-description">
+                <h2>Process Description:</h2>
+                <div id="description-content"></div>
+            </div>
+            <div class="overlay-roi">
+                    <h2>ROI:<span id="roi-content"></span></h2>
+                </div>
+            <div class="overlay-notes">
+                <h2>Notes:</h2>
+                <div id="notes-content"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="/scripts/script.js"></script>
 </body>
 </html>
