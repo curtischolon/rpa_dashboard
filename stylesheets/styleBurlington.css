@@ -166,11 +166,15 @@ div .card {
 }
 
 .overlay-description {
-    height: 35%;
+    padding-bottom: 10px;
 }
 
 .overlay-roi {
     height: 12%;
+}
+
+span {
+    font-weight: 700;
 }
 
 #notes-content, #description-content, #roi-content {

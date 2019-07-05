@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Burlinton Updates</title>
     <link rel="stylesheet" href="/stylesheets/styleBurlington.css">
-    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Mitr:300,500,600|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Mitr:300,500,600|Roboto:400,700&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -42,47 +42,156 @@
         <div class="shrink-reports card">
             <h3>Monthly Shrink Reports</h3>
             <div class="overlay-content">
-                    <div class="description">
-                      <p>Monthly process ran in Computac to generate
-                          and pull the shrink reports by each SBT chain in 
-                          each agency, Canada and the US.
-                      </p>
-                    </div>
-                    <div class="notes">
-                        <p><span>07/05/2019 - </span>The process is largely finished
-                        with initial testing completed 06/30/2019. Some network / email
-                        issues prevented the process from completing. Additionally,
-                        the amount of time it took for the reports to generate was
-                        significantly longer than expect. Expected production date is 
-                        end of July.</p>
-                    </div>
-                    <div class="roi">
-                       <p>12hrs/month</p>
-                    </div>
+                <div class="description">
+                    <p>Monthly process ran in Computac to generate
+                        and pull the shrink reports by each SBT chain in 
+                        each agency, Canada and the US.
+                    </p>
                 </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>The process is largely finished
+                    with initial testing completed 06/30/2019. Some network / email
+                    issues prevented the process from completing. Additionally,
+                    the amount of time it took for the reports to generate was
+                    significantly longer than expect. Expected production date is 
+                    end of July.</p>
+                </div>
+                <div class="roi">
+                    <p>12hrs/month</p>
+                </div>
+            </div>
         </div>
         <div class="sbt-line-check card">
             <h3>SBT POS Line Checks</h3>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>Daily process to balance POS processed by SBT
+                        versus what was posted to DW. POS is processed
+                        via Computac and the following day the same
+                        POS is queried in DW and the totals are
+                        compared for each retail location. Anomolies or
+                        exceptions are escalated and reported.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>This process has not yet advanced
+                    to production, the SBT shrink process is being developed
+                    as a proof of concept and this will follow accordingly. </p>
+                </div>
+                <div class="roi">
+                    <p>6hrs/week</p>
+                </div>  
+            </div>  
         </div>
         <div class="affidavit-processing card">
             <h3>Weekly Affidavit Processing</h3>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>Weekly process whereby affidavits are processed in computac using 
+                        a process screen. Similar to the magazine receiving reconciliation
+                        process where the specific fiscal dates are entered to finalize
+                        affidavits for the respective period.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>This process has not yet reached developement
+                    stage as there are a few considerations. Affidavits are processed on Friday's
+                    and all users must be out of the system in order to run. In order to move
+                    forward with this process we need to assess our ability to monitor 
+                    users.</p>
+                </div>
+                <div class="roi">
+                    <p>12hrs/month</p>
+                </div>
+            </div>
         </div>
 
         <!-- EDI -->
         <div class="edi-header section-header">
             <h2>EDI / IS</h2>
+        
         </div>
         <div class="excel-csv card">
             <h3>Excel POS to CSV Conversion</h3>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>A number of retailers send TNG / ANC excel files with their weekly pos
+                        sales. The files must be formatted and converted into an acceptable
+                        CSV file format.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 -</span>Fresh Thyme was provided as the initial proof of
+                    concept account. Python was used to script the process and was bundled as an
+                    executable for EDI to use when they receive their daily files (06/06/2019).
+                    Awaiting further feedback - follow ups sent 06/13, 06/21, 07/03</p>
+                </div>
+                <div class="roi">
+                    <p>6hrs/week</p>
+                </div>
+            </div>
         </div>
         <div class="pos-portal-retrieval card">
             <h3>Retrieve POS from Dealer Portals</h3>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>A number of retailers provide their POS via download from their 
+                        online portals. This is a daily process whereby individual a 
+                        login is performed for individual chains and the respective
+                        POS files are downloaded for processing by EDI.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>Not yet in development phase, waiting
+                    on further feedback from EDI regarding other processes that have been
+                    automated</p>
+                </div>
+                <div class="roi">
+                    <p>4hrs/week</p>
+                </div>
+            </div>
         </div>
         <div class="emailed-pos card">
             <h3>Bizlink Process Monitoring</h3>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>Bizlink currently does not have an automated notification feature
+                        that can warn users / admin when pending processes queue up beyond
+                        a certain threshold. Automation would entail continuously monitoring
+                        the Bizlink site and send an email / text notification when queued
+                        processes exceed 60.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>Spoke with Fran and Sam on 06/06 when we implemented
+                    the POC for Fresh Thyme POS in Excel to CSV. follow ups sent 06/13, 06/21, 07/03.
+                    Sam to follow up with Fran week of 07/08/2019. </p>
+                </div>
+                <div class="roi">
+                    <p>Risk Aversion</p>
+                </div>
+            </div>
         </div>
         <div class="barnes-noble card">
             <h3>Barnes &amp Noble POS Processing</h3>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>Barnes and Noble currently supplies EDI with a daily file containing
+                        their POS, EDI then processes the POS and creates an invoice that 
+                        is sent to Barnes and Noble for payment. This process is time 
+                        sensitive and relatively manual. Automation would improve turnaround and
+                        reduce time sensitivity.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>The process has not yet entered developement
+                    due to time constraints on EDI's time. Awaiting further follow from Sam and 
+                    Fran regarding other processes. </p>
+                </div>
+                <div class="roi">
+                    <p>Risk Aversion</p>
+                </div>
+            </div>
         </div>
 
         <!-- BEER -->
@@ -91,21 +200,109 @@
         </div>
         <div class="brewery-orders card">
             <h3>Brewery Order Processing</h3>
-            <p></p>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>A number of additional breweries still need models created for invoice
+                        data extraction.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>Working close with Laura Donnely to make sure
+                    she is receiving the resources she needs to address any issues. </p>
+                </div>
+                <div class="roi">
+                    <p>20+hours/week</p>
+                </div>
+            </div>
         </div>
         <div class="curity-reports card">
             <h3>Curity Report Processing</h3>
-            <p></p>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>Daily pick, pack and delivery activity is queried from WMS and input into
+                        individual digital documents (Google Sheets) for each brewery, this is currently
+                        a manual process.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>An automated process is currently in User Acceptance
+                    Testing and being monitored closely by Curtis Cholon and the Burlington team (06/19/2019).
+                    Some additional features have been requested which are currently being implemented - 
+                    Count of records before and after appending data compared to the WMS curity report. </p>
+                </div>
+                <div class="roi">
+                    <p>10hours/week</p>
+                </div>
+            </div>
         </div>
         <div class="ocr-processing card">
             <h3>Digital Document Capture</h3>
-            <p></p>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>A number of breweries are unable to provide searchable PDF or other forms
+                        of document. Currently 3 FTE's are committed to translatting brewery orders
+                        and inputing into SAP for processing. A digital capture solution would be
+                        able to significantly reduce the number of hours and people committed to 
+                        the process.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>Three solutions are currently being reviewed
+                    for implementation: <br>
+                    <strong>Doc Parser:</strong>An online solution with available API that is available
+                    to extract PDF table information along with metadata utilizing OCR and other methods.
+                    Fees are charged by the number of documents processed.</p><br>
+                    <strong>AA IQ Bots:</strong>Document extraction utilizing machine learning with good
+                    integration into the Automation Anywhere environment. Cost is a concern with initial
+                    implementation being presented at $75k plus any additional development requirements.
+                    A proof of concept has been requested.
+                </div>
+                <div class="roi">
+                    <p>80 - 120hrs/week</p>
+                </div>
+            </div>
         </div>
         <div class="com-monarch card">
             <h3>COM Monarch Automation</h3>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>There are numerous Monarch templates being used to extract data from the 
+                        various brewery invoices. The windows COM environment can be used to
+                        automate the extraction of multiple templates within a Monarch project
+                        with the click of a button, simplifying the process and structuring / standardizing
+                        the extraction process.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>Received confirmation on 06/10 that Laura Donnely
+                    had the COM automation license installed in her machine. Will move forward with
+                    developing further automations to implement the Monarch Object class within excel
+                    or VB.Net. Expected implementation mid to late July 2019 </p>
+                </div>
+                <div class="roi">
+                    <p>8 - 12hrs/week</p>
+                </div>
+            </div>
         </div>
         <div class="beer-store card">
             <h3>The Beer Store Web Scrapper</h3>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>The Beer Store changed the design and layout of their website which has caused the existing
+                        TBS web scrapper to fail, the task need to be rewritten.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>Communicated with Derek Palango on 06/26/2019 that I was
+                    working on the automation, there a few challenges with how the site is now organized. 
+                    In order to pull data a single store has to be selected and then each SKU within can
+                    searched. Additionally, the store list is now lazy loaded which requires a bit of 
+                    strategy to extract and identify the store by number.</p>
+                </div>
+                <div class="roi">
+                    <p>Value Proposition</p>
+                </div>
+            </div>
         </div>
 
         <!-- Books -->
@@ -114,13 +311,57 @@
         </div>
         <div class=" roll-forward card">
             <h3>Monthly Publisher Roll-Forward</h3>
-            <p></p>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>Monthly process for Hachette and Simon &amp Schuster, reports are run in computac, retrieved,
+                        and processed via monarch and then finally sent to the vendor.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>In production as of 06/15/2019. There are a few network issues
+                    that have prevented the automation from completing properly - email not functioning, which
+                    we're researching with IS.</p>
+                </div>
+                <div class="roi">
+                    <p>2hrs/month</p>
+                </div>
+            </div>
         </div>
         <div class="abc-returns card">
             <h3>Publisher ABC Returns</h3>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>Monthly return process similar to the Publisher Roll-Forward, reports are run in computac, retrieved,
+                            and processed via monarch and then finally sent to the vendor.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>In production as of 06/15/2019. There are a few network issues
+                        that have prevented the automation from completing properly - email not functioning, which
+                        we're researching with IS.</p>
+                </div>
+                <div class="roi">
+                    <p>2hrs/month</p>
+                </div>
+            </div>
         </div>
         <div class="pub-returns card">
             <h3>Weekly Publisher Returns</h3>
+            <div class="overlay-content">
+                <div class="description">
+                    <p>Weekly process for distributing packing slips and affidavits to various publishers. A total of 15 reports
+                        are run in computac, retrieved, formatted and emailed.
+                    </p>
+                </div>
+                <div class="notes">
+                    <p><span>07/05/2019 - </span>In production as of 06/30/2019. There are a few network issues
+                        that have prevented the automation from completing properly - email not functioning, which
+                        we're researching with IS.</p>
+                </div>
+                <div class="roi">
+                    <p>2hrs/week</p>
+                </div>
+            </div>
         </div>
 
         <!-- Footer -->
