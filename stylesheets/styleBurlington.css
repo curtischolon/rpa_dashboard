@@ -47,6 +47,7 @@ div .card {
 .card:hover {
     color: #0336ff;
     cursor: pointer;
+    background-color: #444444;
 }
 
 
