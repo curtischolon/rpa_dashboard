@@ -141,6 +141,7 @@ div .card h3 {
     display: none;
     background-color: #aaa;
     color: black;
+    padding: 15px;
 }
 
 .overlay-description {
@@ -152,11 +153,5 @@ div .card h3 {
 }
 
 span {
-    font-weight: 700;
-}
-
-#notes-content, #description-content, #roi-content {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 100;
+    font-weight: 500;
 }
