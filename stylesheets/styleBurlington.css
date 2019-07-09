@@ -11,6 +11,7 @@ body {
 }
 
 .wrapper {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1px;
@@ -41,6 +42,15 @@ div .card {
     font-weight: 300;
     text-align: left;
     grid-column: 2/12;
+}
+
+div .card::before {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    background-color: green;
+    border-radius: 50%;
+    z-index: 999;
 }
 
 div .card h3 {
