@@ -44,7 +44,8 @@ div .card {
     grid-column: 2/12;
 }
 
-div .card::before {
+.card h3::before {
+    content: '';
     margin: 0 auto;
     width: 24px;
     height: 24px;
