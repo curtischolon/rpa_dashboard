@@ -142,16 +142,20 @@ div .card h3 {
     background-color: #aaa;
     color: black;
     padding: 15px;
-}
-
-.overlay-description {
-    padding-bottom: 10px;
-}
-
-.overlay-roi {
-    height: 12%;
+    height: 400px;
+    overflow-y: scroll;
 }
 
 span {
     font-weight: 500;
+}
+
+.collapsible:after {
+    content: '\02795';
+    color: white;
+    float: right;
+}
+
+.active:after {
+    content: '\02796';
 }
