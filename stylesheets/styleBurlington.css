@@ -44,109 +44,16 @@ div .card {
     grid-column: 2/12;
 }
 
-.card h3::before {
-    content: '';
-    margin: 0 auto;
-    width: 24px;
-    height: 24px;
-    background-color: green;
-    border-radius: 50%;
-    z-index: 999;
-}
-
 div .card h3 {
     padding: 15px;
 }
 
-.card:hover{
+.collapsible:hover{
     color: #0336ff;
     cursor: pointer;
     background-color: #222;
 }
 
-/* Compliance */
-.compliance-header {
-    grid-row: 2;
-}
-
-.compliance-returns {
-    grid-row: 3;
-}
-
-.shrink-reports {
-    grid-row: 4;
-}
-
-.sbt-line-check {
-    grid-row: 5;
-}
-
-.affidavit-processing {
-    grid-row: 6;
-}
-
-
-/* EDI */
-.edi-header {
-    grid-row: 7;
-}
-
-.excel-csv {
-    grid-row: 8;
-}
-
-.pos-portal-retrieval {
-    grid-row: 9;
-}
-
-.emailed-pos {
-    grid-row: 10;
-}
-
-.barnes-noble {
-    grid-row: 11;
-}
-
-/* BEER */
-.beer-header {
-    grid-row: 12;
-}
-
-.brewery-orders {
-    grid-row: 13;
-}
-
-.curity-reports {
-    grid-row: 14;
-}
-
-.ocr-processing {
-    grid-row: 15;
-}
-
-.com-monarch {
-    grid-row: 16;
-}
-
-.beer-store {
-    grid-row: 17;
-}
-
-.books-header {
-    grid-row: 18;
-}
-
-.roll-forward {
-    grid-row: 19;
-}
-
-.abc-returns {
-    grid-row: 20;
-}
-
-.pub-returns {
-    grid-row: 21;
-}
 
 .dropdown-content {
     display: none;
@@ -155,6 +62,10 @@ div .card h3 {
     padding: 15px;
     height: 400px;
     overflow-y: scroll;
+}
+
+.dropdown-content:hover {
+    cursor: default;
 }
 
 span {
