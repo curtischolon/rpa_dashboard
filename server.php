@@ -2,7 +2,7 @@
     session_start();
     $db = mysqli_connect('10.0.245.18',
     'admin', 
-    'QpT1dJyCBkXutIzX',
+    '',
     'db_rpa');
 
     $dept = '';
