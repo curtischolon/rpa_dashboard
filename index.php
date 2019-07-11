@@ -21,7 +21,7 @@
             <option value="medium">Medium</option>
             <option value="high">High</option>
         </select>
-        <label for="description"></label>
+        <label for="description">Description</label>
         <input type="text" name="description" id="description" require>
         <label for="roi">ROI (hrs/week)</label>
         <input type="number" name="roi" id="roi" require>
