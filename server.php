@@ -1,13 +1,13 @@
 <?php
     session_start();
-    $db = mysqli_connect('10.0.245.18',
-    'admin', 
-    'password',
+    $db = mysqli_connect('localhost',
+    'root', 
+    '',
     'db_rpa');
 
     $dept = '';
     $task_name = '';
-    $perct_complt = 0;
+    $perct_cmplt = 0;
     $priority = '';
     $description = '';
     $roi = 0;
@@ -27,10 +27,20 @@
         $completion = $_POST['completion'];
         $notes = $_POST['notes'];
 
-        mysqli_query($db, "INSERT INTO tbl_rpa (dept, 
+        echo $dept;
+        echo $task_name;
+        echo $perct_cmplt;
+        echo $priority;
+        echo $description;
+        echo $roi;
+        echo $implemented;
+        echo $completion;
+        echo $notes;
+
+        mysqli_query($db, "INSERT INTO tbl_rpa (department, 
         task_name, 
         percentage_complete, 
-        priority,
+        priority, 
         description,
         roi,
         implemented,
