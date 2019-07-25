@@ -8,6 +8,7 @@ function addEventListeners() {
                 sibling.style.display = 'none';
             } else {
                 sibling.style.display = 'block';
+                sibling.scrollIntoView({behavior: 'smooth', block: 'center'});
             }
         });
     }
